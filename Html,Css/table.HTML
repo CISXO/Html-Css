@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://showcases.yalco.kr/html-css/01-06/table.css">
+  <title>Document</title>
+</head>
+<body>
+<h1> table 표사용, 다른 링크로의 이동</h1>
+  <p>table>caption+(tr>td*3)*3<br>
+    &lt;link rel="stylesheet" href="https://showcases.yalco.kr/html-css/01-06/table.css"&gt; table을 위한 css
+  </p>
+  <table>
+    <caption>1에서부터 9까지의 숫자들</caption>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </table>
+  <p>
+    table>caption+(thead>tr>th*4)+(tbody>tr>(th+td*3))*3+tfoot>(tr>th+td*3)<br>
+   
+    <table>
+      <caption>웹 개발 공부 기록</caption>
+      <thead>
+        <tr>
+          <th scope="col">과목</th>
+          <th scope="col">월</th>
+          <th scope="col">화</th>
+          <th scope="col">수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="low">HTML</th>
+          <td>60분</td>
+          <td>60분</td>
+          <td>0분</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="low">Css</th>
+          <td>0분</td>
+          <td>30분</td>
+          <td>60분</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="low">Js</th>
+          <td>0분</td>
+          <td>0분</td>
+          <td>60분</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>총 시간</th>
+          <td>60분</td>
+          <td>90분</td>
+          <td>120분</td>
+        </tr>
+      </tfoot>
+    </table>
+    <p>scope 는 육안으로 달라지는 부분은 없지만 컴퓨터가 이사이트를 분석하거나 스크린리더를 통해서 읽는 사람에게 체계적으로 정보를 준다. </p>
+  </p>
+
+  <p>
+    <h2><li>colspan: 열 병합</li>
+    <li>rowspan: 행 병합</li></h2>
+    table>(tr>td{1}*4)*4
+    <table>
+      <tr>
+        <td>1</td>
+        <td colspan="2">2</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td rowspan="3">3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td colspan="2" rowspan="2">4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+      </tr>
+    </table>
+    <strong> table은 표를 이용할 때만 사용할 것!</strong>
+  </p>
+
+  <p>
+    table>caption+(thead>tr>th*7)+(tbody>tr>(th+td*6))*4
+
+    <table>
+      <caption>
+        <colgroup>
+        <col class="weekend">
+        <col span="5">
+        <col class="weekend">
+        </colgroup>
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">일</th>
+          <th scope="col">월</th>
+          <th scope="col">화</th>
+          <th scope="col">수</th>
+          <th scope="col">목</th>
+          <th scope="col">금</th>
+          <th scope="col">토</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>_</th>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th>_</th>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th>_</th>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th>_</th>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+        </tr>
+      </tbody>
+    </table>
+  </p>
+  <h3><li>table :테이블</li>
+  <li>caption :표 설명 또는 제목</li>
+  <li>tr :테이블의 행</li>
+  <li>td :테이블의 데이터 셀</li>
+  <br>
+<li>thead :테이블의 헤더 부분(tbody)앞에 와야 함</li>
+<li>tbody :테이블의 본문(본 내용을담음)</li>
+<li>tfoot :테이블의 푸터 부분(tbody) 뒤에 와야 함</li>
+<li>th :열 또는 행의 헤더(scope 속성으로 row, col중 선택</li></h3>
+<p>
+  <a href="https://www.google.com">현재 페이지에서 google!!</a><br>
+  <b>현재 사용하는 페이지에서 이동</b><br>
+  <a href="https://www.google.com" target="_blank">새로운 페이지에서 google!!</a><br>
+<b>현재 페이지는 그대로 두고 새로운 페이지에서 이동</b>
+</p>
+
+<h2> tag 기능<br>
+아이디 속성 : # 
+어떤게 연속적으로 반복되면서 숫자가 반복되게 하기 위해서 :$
+
+p#target_${id: target_$}*1000
+</h2>
+<a href="#target_800">go to target</a>
+
+<p id="target_1">id: target_1</p>
+<p id="target_2">id: target_2</p>
+<p id="target_3">id: target_3</p>
+<p id="target_4">id: target_4</p>
+<p id="target_5">id: target_5</p>
+<p id="target_6">id: target_6</p>
+<p id="target_7">id: target_7</p>
+<p id="target_8">id: target_8</p>
+<p id="target_9">id: target_9</p>
+<p id="target_10">id: target_10</p>
+<p id="target_11">id: target_11</p>
+<p id="target_12">id: target_12</p>
+<p id="target_13">id: target_13</p>
+<p id="target_14">id: target_14</p>
+<p id="target_673">id: target_673</p>
+<p id="target_674">id: target_674</p>
+<p id="target_675">id: target_675</p>
+<p id="target_676">id: target_676</p>
+<p id="target_677">id: target_677</p>
+<p id="target_678">id: target_678</p>
+<p id="target_679">id: target_679</p>
+<p id="target_680">id: target_680</p>
+<p id="target_681">id: target_681</p>
+<p id="target_682">id: target_682</p>
+<p id="target_683">id: target_683</p>
+<p id="target_684">id: target_684</p>
+<p id="target_685">id: target_685</p>
+<p id="target_686">id: target_686</p>
+<p id="target_687">id: target_687</p>
+<p id="target_688">id: target_688</p>
+<p id="target_689">id: target_689</p>
+<p id="target_690">id: target_690</p>
+<p id="target_691">id: target_691</p>
+<p id="target_692">id: target_692</p>
+<p id="target_693">id: target_693</p>
+<p id="target_694">id: target_694</p>
+<p id="target_695">id: target_695</p>
+<p id="target_696">id: target_696</p>
+<p id="target_697">id: target_697</p>
+<p id="target_698">id: target_698</p>
+<p id="target_699">id: target_699</p>
+<p id="target_700">id: target_700</p>
+<p id="target_701">id: target_701</p>
+<p id="target_702">id: target_702</p>
+<p id="target_703">id: target_703</p>
+<p id="target_704">id: target_704</p>
+<p id="target_705">id: target_705</p>
+<p id="target_706">id: target_706</p>
+<p id="target_707">id: target_707</p>
+<p id="target_708">id: target_708</p>
+<p id="target_709">id: target_709</p>
+<p id="target_710">id: target_710</p>
+<p id="target_711">id: target_711</p>
+<p id="target_712">id: target_712</p>
+<p id="target_800">id: target_800</p>
+<p id="target_714">id: target_714</p>
+<p id="target_715">id: target_715</p>
+<p id="target_716">id: target_716</p>
+<p id="target_717">id: target_717</p>
+<p id="target_718">id: target_718</p>
+<p id="target_719">id: target_719</p>
+<p id="target_720">id: target_720</p>
+<p id="target_721">id: target_721</p>
+<p id="target_722">id: target_722</p>
+<p id="target_723">id: target_723</p>
+<p id="target_724">id: target_724</p>
+<p id="target_725">id: target_725</p>
+<p id="target_726">id: target_726</p>
+<p id="target_727">id: target_727</p>
+<p id="target_728">id: target_728</p>
+<p id="target_729">id: target_729</p>
+<p id="target_730">id: target_730</p>
+<p id="target_731">id: target_731</p>
+<p id="target_732">id: target_732</p>
+<p id="target_733">id: target_733</p>
+<p id="target_734">id: target_734</p>
+<p id="target_735">id: target_735</p>
+<p id="target_736">id: target_736</p>
+<p id="target_808">id: target_808</p>
+<p id="target_809">id: target_809</p>
+<p id="target_810">id: target_810</p>
+<p id="target_811">id: target_811</p>
+<p id="target_812">id: target_812</p>
+<p id="target_813">id: target_813</p>
+<p id="target_814">id: target_814</p>
+<p id="target_815">id: target_815</p>
+<p id="target_816">id: target_816</p>
+<p id="target_817">id: target_817</p>
+<p id="target_818">id: target_818</p>
+<p id="target_819">id: target_819</p>
+<p id="target_820">id: target_820</p>
+<p id="target_821">id: target_821</p>
+<p id="target_822">id: target_822</p>
+<p id="target_823">id: target_823</p>
+<p id="target_824">id: target_824</p>
+<p id="target_825">id: target_825</p>
+<p id="target_826">id: target_826</p>
+<p id="target_827">id: target_827</p>
+<p id="target_828">id: target_828</p>
+<p id="target_829">id: target_829</p>
+<p id="target_830">id: target_830</p>
+<p id="target_831">id: target_831</p>
+<p id="target_832">id: target_832</p>
+<p id="target_833">id: target_833</p>
+<p id="target_834">id: target_834</p>
+<p id="target_835">id: target_835</p>
+<p id="target_836">id: target_836</p>
+<p id="target_837">id: target_837</p>
+<p id="target_838">id: target_838</p>
+<p id="target_839">id: target_839</p>
+<p id="target_840">id: target_840</p>
+<p id="target_841">id: target_841</p>
+<p id="target_842">id: target_842</p>
+<p id="target_843">id: target_843</p>
+<p id="target_844">id: target_844</p>
+<p id="target_845">id: target_845</p>
+<p id="target_846">id: target_846</p>
+<p id="target_847">id: target_847</p>
+<p id="target_848">id: target_848</p>
+<p id="target_849">id: target_849</p>
+<p id="target_850">id: target_850</p>
+<p id="target_851">id: target_851</p>
+<p id="target_852">id: target_852</p>
+<p id="target_853">id: target_853</p>
+<p id="target_854">id: target_854</p>
+<p id="target_855">id: target_855</p>
+<p id="target_856">id: target_856</p>
+<p id="target_857">id: target_857</p>
+<p id="target_858">id: target_858</p>
+<p id="target_859">id: target_859</p>
+<p id="target_860">id: target_860</p>
+<p id="target_861">id: target_861</p>
+<p id="target_862">id: target_862</p>
+<p id="target_863">id: target_863</p>
+<p id="target_864">id: target_864</p>
+<p id="target_865">id: target_865</p>
+<p id="target_866">id: target_866</p>
+<p id="target_867">id: target_867</p>
+</body>
+</html>

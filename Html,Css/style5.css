@@ -1,0 +1,13 @@
+.outer {
+  width: 200px; height: 200px;
+  background-color: #eee;
+  background-image: url(https://user-images.githubusercontent.com/99077276/180286391-24becd48-34e9-4792-b1cb-b5c02e0c3007.jpg);
+  background-size: cover;
+}
+.with-bg {
+  height: 100%;
+  background-image: url(https://user-images.githubusercontent.com/99077276/181230674-91be98f3-e972-4aa0-855d-54ebb3ef6677.gif);
+ background-size: cover;
+ 
+  border-radius: 50%;
+}

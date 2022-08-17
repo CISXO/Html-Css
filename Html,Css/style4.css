@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+  border: solid black;
+  border-radius: 3em;
+  padding: 0.5em;
+  }
+  
+  div:nth-child(1) {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  border: solid black;
+  border-radius: 30px  60px 90px 120px;
+   box-shadow: 5px 5px black;
+  /* margin: 0 auto; */
+  }
+  
+  ul > li:not(:first-child) {
+    border-bottom: 1px solid black;
+  }

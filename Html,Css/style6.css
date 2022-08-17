@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#header {
+  display: flex;
+  background-color: dodgerblue;
+  padding: 12px;
+  flex-basis: 100px;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+#header > * {
+  background-color: yellow;
+  cursor: pointer;
+  padding: 12px;
+  text-align: center;
+  /* text-align 요소는 상속이 가능해서 header 안에 넣어도 됨 */
+}
+
+#header > *:first-child {
+  flex-basis: 100px;
+}
+
+#header > *:last-child {
+  flex-grow: 1;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;;
+}
+
+#footer {
+  flex-basis: 60px;
+  background-color: rgb(13, 16, 5);
+  cursor: not-allowed;
+}
+
+#content {
+    
+
+  background-color: skyblue;
+  position: sticky;
+  padding: 24px;
+
+  cursor: zoom-in;
+  opacity: 0.4;
+ /*  visibility: ;
+  display:  ; 
+  javascript에서 특정 요소를 없애고 이벤트조건이 필요할때 사용함 */
+
+}
